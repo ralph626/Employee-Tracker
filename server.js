@@ -111,9 +111,6 @@ async function runSearch() {
     });
     console.log("updating employee with id ", id, newRole);
     await update(table, id, newRole);
-
-    //figure out update expression to update the role_id of the employee with id=id
-    //UPDATE ..... WHERE
   }
 
   setTimeout(runSearch, 3000);
